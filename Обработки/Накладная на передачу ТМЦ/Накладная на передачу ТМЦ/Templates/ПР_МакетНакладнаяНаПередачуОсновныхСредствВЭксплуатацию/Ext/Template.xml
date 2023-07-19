@@ -536,6 +536,11 @@
 		<row>
 			<formatIndex>17</formatIndex>
 			<c>
+				<c>
+					<f>11</f>
+				</c>
+			</c>
+			<c>
 				<i>6</i>
 				<c>
 					<f>18</f>
@@ -1282,6 +1287,13 @@
 		<index>35</index>
 		<row>
 			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl/>
+				</c>
+			</c>
+			<c>
 				<i>3</i>
 				<c>
 					<f>47</f>
@@ -1312,10 +1324,90 @@
 			</c>
 		</row>
 	</rowsItem>
+	<rowsItem>
+		<index>36</index>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>37</index>
+		<row>
+			<c>
+				<c>
+					<f>49</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контактный телефон отправителя</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>11</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>50</f>
+					<parameter>ТелефонОтправителя</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>11</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>38</index>
+		<row>
+			<c>
+				<c>
+					<f>49</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контактный телефон получателя</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>11</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>50</f>
+					<parameter>ТелефонПолучателя</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>11</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
 	<templateMode>true</templateMode>
 	<defaultFormatIndex>11</defaultFormatIndex>
-	<height>36</height>
-	<vgRows>36</vgRows>
+	<height>40</height>
+	<vgRows>40</vgRows>
 	<merge>
 		<r>4</r>
 		<c>0</c>
@@ -1528,6 +1620,16 @@
 		<c>3</c>
 		<w>1</w>
 	</merge>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ОбластьКонтактныйТелефон</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>36</beginRow>
+			<endRow>39</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
 		<name>ОбластьПодвал</name>
 		<area>
@@ -1785,5 +1887,14 @@
 	<format>
 		<width>88</width>
 		<horizontalAlignment>Center</horizontalAlignment>
+	</format>
+	<format>
+		<font>3</font>
+		<width>72</width>
+	</format>
+	<format>
+		<font>5</font>
+		<width>72</width>
+		<fillType>Parameter</fillType>
 	</format>
 </document>
