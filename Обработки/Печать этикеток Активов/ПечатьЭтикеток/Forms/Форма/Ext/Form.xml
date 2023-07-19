@@ -98,6 +98,11 @@
 					<ContextMenu name="ТаблицаАктивовАктивКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="ТаблицаАктивовАктивРасширеннаяПодсказка" id="24"/>
 				</InputField>
+				<InputField name="ТаблицаАктивовИнвентарныйНомер" id="35">
+					<DataPath>ТаблицаАктивов.ИнвентарныйНомер</DataPath>
+					<ContextMenu name="ТаблицаАктивовИнвентарныйНомерКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТаблицаАктивовИнвентарныйНомерРасширеннаяПодсказка" id="37"/>
+				</InputField>
 				<InputField name="ТаблицаАктивовШтрихКод" id="25">
 					<DataPath>ТаблицаАктивов.Штрихкод</DataPath>
 					<ReadOnly>true</ReadOnly>
@@ -175,6 +180,21 @@
 						<v8:DateQualifiers>
 							<v8:DateFractions>Date</v8:DateFractions>
 						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИнвентарныйНомер" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инвентарный номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 				</Column>
 			</Columns>
