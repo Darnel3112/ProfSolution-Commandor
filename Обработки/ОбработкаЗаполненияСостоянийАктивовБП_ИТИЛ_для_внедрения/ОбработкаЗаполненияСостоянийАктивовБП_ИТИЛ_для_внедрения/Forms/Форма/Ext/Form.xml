@@ -1,0 +1,674 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Страницы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="СтраницаБП" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БП</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница БП</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаБПРасширеннаяПодсказка" id="6"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЗаписьВФайл" id="34">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа запись в файл</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа запись в файл</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗаписьВФайлРасширеннаяПодсказка" id="35"/>
+							<ChildItems>
+								<Button name="ВыгрузитьВФайл" id="32">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.ВыгрузитьДанныеИзБП</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выгрузить данные из БП</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВыгрузитьВФайлРасширеннаяПодсказка" id="33"/>
+								</Button>
+								<Button name="ЗагрузитьДанныеВБП" id="126">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.ЗагрузитьДанныеВБП</CommandName>
+									<ExtendedTooltip name="ЗагрузитьДанныеВБПРасширеннаяПодсказка" id="127"/>
+								</Button>
+								<Button name="ОбновитьВБП" id="142">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ОбновитьВБП</CommandName>
+									<ExtendedTooltip name="ОбновитьВБПРасширеннаяПодсказка" id="143"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ТЗДанныхВБП" id="7">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТЗДанныхБП</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТЗДанныхВБПКонтекстноеМеню" id="8"/>
+							<AutoCommandBar name="ТЗДанныхВБПКоманднаяПанель" id="9"/>
+							<ExtendedTooltip name="ТЗДанныхВБПРасширеннаяПодсказка" id="10"/>
+							<SearchStringAddition name="ТЗДанныхВБПСтрокаПоиска" id="11">
+								<AdditionSource>
+									<Item>ТЗДанныхВБП</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЗДанныхВБПСтрокаПоискаКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ТЗДанныхВБПСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТЗДанныхВБПСостояниеПросмотра" id="14">
+								<AdditionSource>
+									<Item>ТЗДанныхВБП</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЗДанныхВБПСостояниеПросмотраКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="ТЗДанныхВБПСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТЗДанныхВБПУправлениеПоиском" id="17">
+								<AdditionSource>
+									<Item>ТЗДанныхВБП</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЗДанныхВБПУправлениеПоискомКонтекстноеМеню" id="18"/>
+								<ExtendedTooltip name="ТЗДанныхВБПУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТЗДанныхВБПОсновноеСредство" id="128">
+									<DataPath>ТЗДанныхБП.ОсновноеСредство</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДанныхВБПОсновноеСредствоКонтекстноеМеню" id="129"/>
+									<ExtendedTooltip name="ТЗДанныхВБПОсновноеСредствоРасширеннаяПодсказка" id="130"/>
+								</InputField>
+								<InputField name="ТЗБПИнвентарныйНомерITIL" id="20">
+									<DataPath>ТЗДанныхБП.ИнвентарныйНомерITIL</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗБПИнвентарныйНомерITILКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ТЗБПИнвентарныйНомерITILРасширеннаяПодсказка" id="22"/>
+								</InputField>
+								<InputField name="ТЗБПДатаПринятияКУчету" id="23">
+									<DataPath>ТЗДанныхБП.ДатаПринятияКУчету</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗБПДатаПринятияКУчетуКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="ТЗБПДатаПринятияКУчетуРасширеннаяПодсказка" id="25"/>
+								</InputField>
+								<InputField name="ТЗДанныхВБПОрганизация" id="131">
+									<DataPath>ТЗДанныхБП.Организация</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДанныхВБПОрганизацияКонтекстноеМеню" id="132"/>
+									<ExtendedTooltip name="ТЗДанныхВБПОрганизацияРасширеннаяПодсказка" id="133"/>
+								</InputField>
+								<InputField name="ТЗБПГУИДВБП" id="26">
+									<DataPath>ТЗДанныхБП.ГУИДОСВБП</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗБПГУИДВБПКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ТЗБПГУИДВБПРасширеннаяПодсказка" id="28"/>
+								</InputField>
+								<InputField name="ТЗБПГУИДОрганизации" id="29">
+									<DataPath>ТЗДанныхБП.ГУИДОрганизации</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗБПГУИДОрганизацииКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="ТЗБПГУИДОрганизацииРасширеннаяПодсказка" id="31"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаITIL" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ITIL</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ITIL</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаITILРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<UsualGroup name="КомандыITIL" id="134">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Команды ITIL</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Команды ITIL</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="КомандыITILРасширеннаяПодсказка" id="135"/>
+							<ChildItems>
+								<Button name="ЗагрузитьИЗФайла" id="66">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.ЗагрузитьДанныеИзБП</CommandName>
+									<ExtendedTooltip name="ЗагрузитьИЗФайлаРасширеннаяПодсказка" id="67"/>
+								</Button>
+								<Button name="ТЗДанныхВИТИЛОбработатьАктивы" id="104">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.ОбработатьАктивы</CommandName>
+									<ExtendedTooltip name="ТЗДанныхВИТИЛОбработатьАктивыРасширеннаяПодсказка" id="105"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ТЗДанныхВИТИЛ" id="39">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТЗДанныхИТИЛ</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТЗДанныхВИТИЛКонтекстноеМеню" id="40"/>
+							<AutoCommandBar name="ТЗДанныхВИТИЛКоманднаяПанель" id="41"/>
+							<ExtendedTooltip name="ТЗДанныхВИТИЛРасширеннаяПодсказка" id="42"/>
+							<SearchStringAddition name="ТЗДанныхВИТИЛСтрокаПоиска" id="43">
+								<AdditionSource>
+									<Item>ТЗДанныхВИТИЛ</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЗДанныхВИТИЛСтрокаПоискаКонтекстноеМеню" id="44"/>
+								<ExtendedTooltip name="ТЗДанныхВИТИЛСтрокаПоискаРасширеннаяПодсказка" id="45"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТЗДанныхВИТИЛСостояниеПросмотра" id="46">
+								<AdditionSource>
+									<Item>ТЗДанныхВИТИЛ</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЗДанныхВИТИЛСостояниеПросмотраКонтекстноеМеню" id="47"/>
+								<ExtendedTooltip name="ТЗДанныхВИТИЛСостояниеПросмотраРасширеннаяПодсказка" id="48"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТЗДанныхВИТИЛУправлениеПоиском" id="49">
+								<AdditionSource>
+									<Item>ТЗДанныхВИТИЛ</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТЗДанныхВИТИЛУправлениеПоискомКонтекстноеМеню" id="50"/>
+								<ExtendedTooltip name="ТЗДанныхВИТИЛУправлениеПоискомРасширеннаяПодсказка" id="51"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТЗДанныхВИТИЛАктив" id="136">
+									<DataPath>ТЗДанныхИТИЛ.Актив</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДанныхВИТИЛАктивКонтекстноеМеню" id="137"/>
+									<ExtendedTooltip name="ТЗДанныхВИТИЛАктивРасширеннаяПодсказка" id="138"/>
+								</InputField>
+								<InputField name="ТЗДанныхВИТИЛИнвентарныйНомерITIL" id="68">
+									<DataPath>ТЗДанныхИТИЛ.ИнвентарныйНомерITIL</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДанныхВИТИЛИнвентарныйНомерITILКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="ТЗДанныхВИТИЛИнвентарныйНомерITILРасширеннаяПодсказка" id="70"/>
+								</InputField>
+								<InputField name="ТЗДанныхВИТИЛДатаПринятияКУчету" id="71">
+									<DataPath>ТЗДанныхИТИЛ.ДатаПринятияКУчету</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДанныхВИТИЛДатаПринятияКУчетуКонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="ТЗДанныхВИТИЛДатаПринятияКУчетуРасширеннаяПодсказка" id="73"/>
+								</InputField>
+								<InputField name="ТЗДанныхВИТИЛФирма" id="139">
+									<DataPath>ТЗДанныхИТИЛ.Фирма</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЗДанныхВИТИЛФирмаКонтекстноеМеню" id="140"/>
+									<ExtendedTooltip name="ТЗДанныхВИТИЛФирмаРасширеннаяПодсказка" id="141"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ОбработкаЗаполненияСостоянийАктивовБП_ИТИЛ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТЗДанныхБП" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЗДанных БП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИнвентарныйНомерITIL" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инвентарный номер ITIL</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>9</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПринятияКУчету" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата принятия к учету</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГУИДОСВБП" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ГУИД ОС в БП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГУИДОрганизации" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ГУИДОрганизации</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОсновноеСредство" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основное средство</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ОсновныеСредства</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Организация" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПутьФайлаВыгрузкиИзБП" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь файла выгрузки из БП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТЗДанныхИТИЛ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЗДанных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИнвентарныйНомерITIL" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инвентарный номер ITIL</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>9</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаПринятияКУчету" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата принятия к учету</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГУИДОСВБП" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ГУИД ОС в БП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ГУИДОрганизации" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ГУИД фирмы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Актив" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Актив</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.itilprofАктивы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Фирма" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фирма</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПР_Фирмы</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПолныйПутьДоФайлаЗагрузки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь файла загрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьЖурналаОшибокВITIL" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь файла ошибки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьЖурналаОшибокВБП" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь журнала ошибок ВБП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьФайлаОбработанныхАктивов" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь файла обработанных активов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПолныйПутьДоФайлаЗагрузкиДанныхВБП" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь файла загрузки данных в БП</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДанныеВITILОбработаны" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные ВITILОбработаны</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыгрузитьДанныеИзБП" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить данные из БП</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создает файл с данными, приведенными в таблице ниже.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.WriteChanges</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыгрузитьДанныеИзБП</Action>
+		</Command>
+		<Command name="ЗагрузитьДанныеИзБП" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные из БП</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить файл с данными из БП КОРП</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ReadChanges</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьДанныеИзБП</Action>
+		</Command>
+		<Command name="ОбработатьАктивы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработать данные и выгрузить результат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Произведет обработку загруженных данных. Результат обработки запишет в файл.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Reread</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбработатьАктивы</Action>
+		</Command>
+		<Command name="ЗагрузитьДанныеВБП" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные из ITIL</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные из файла в БП</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ReadChanges</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьДанныеВБП</Action>
+		</Command>
+		<Command name="ОбновитьВБП" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить ВБП</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Reread</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьВБП</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>
