@@ -68,11 +68,6 @@
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
-				<InputField name="Ответственный" id="13">
-					<DataPath>Ответственный</DataPath>
-					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="14"/>
-					<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="15"/>
-				</InputField>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
@@ -124,17 +119,6 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="Ответственный" id="5">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Ответственный в Поступлениях</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="ПолныйПутьДоФайлаЗагрузки" id="6">
