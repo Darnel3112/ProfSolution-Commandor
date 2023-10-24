@@ -33,12 +33,6 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<InputField name="Организация" id="32">
-			<DataPath>Организация</DataPath>
-			<AutoMarkIncomplete>true</AutoMarkIncomplete>
-			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="33"/>
-			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="34"/>
-		</InputField>
 		<Table name="ТаблицаАктивов" id="6">
 			<Representation>List</Representation>
 			<ChangeRowSet>false</ChangeRowSet>
